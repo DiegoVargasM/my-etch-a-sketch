@@ -1,4 +1,5 @@
 let color = "black";
+let click = false;
 
 function populateBoard(size) {
     let board = document.querySelector(".board");
@@ -28,10 +29,12 @@ function changeSize(input) {
 }
 
 function colorSquare() {
-    if (color === "random") {
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-    } else {
-        this.style.backgroundColor = color;
+    if (click) {
+        if (color === "random") {
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+        } else {
+            this.style.backgroundColor = color;
+        }
     }
 }
 
@@ -44,4 +47,22 @@ function resetBoard() {
     let squares = board.querySelectorAll("div");
     squares.forEach((div) => div.remove());
     populateBoard(16);
+}
+
+//function to toggle drawing on/off with clicking
+body = document.querySelector("body");
+body.addEventListener("click", changeValue);
+
+function changeValue(e) {
+    //Only fire the function when not clicking a button
+    if (e.target.tagName != "BUTTON") {
+        click = !click;
+        //show the user current mode
+        mode = document.querySelector(".mode")
+        if (click) {
+            mode.textContent = "Mode: Coloring";
+        } else {
+            mode.textContent = "Mode: Not coloring";
+        }
+    }
 }
