@@ -27,9 +27,10 @@ populateBoard(16);
 //only allow a given range of sizes
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
+        document.querySelector(".error").style.display = "none";
         populateBoard(input);
     } else {
-        console.log("pick a valid number");
+        document.querySelector(".error").style.display = "flex";
     }
 }
 
