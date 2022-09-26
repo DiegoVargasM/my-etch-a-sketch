@@ -9,28 +9,27 @@
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <div class="flex-container">
-        <div class="title"><h1>SketchPad</h1></div>
-        <div class="mode">Mode: Not coloring</div>
-        <div class="content">
-            <div class="board"></div>
-            <div class="buttons">
-                <button class="blackButton" onclick="changeColor(`black`)">Black</button>
-                <button class="grayButton" onclick="changeColor(`gray`)">Gray</button>
-                <button class="eraserButton" onclick="changeColor(`white`)">Eraser</button>
-                <button class="randomButton" onclick="changeColor(`random`)">Rainbow</button>
-                <button onclick="resetBoard()">Reset</button>
-            </div>
-            <div>
-                <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
-                <button>Set Size</button>
-            </div>
-            <div class="alert">
-                <p>Input must be between 2 and 100</p>
+        <div class="flex-container">
+            <div class="title"><h1>SketchPad</h1></div>
+            <div class="mode">Mode: Not coloring</div>
+            <div class="content">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button class="blackButton" onclick="changeColor(`black`)">Black</button>
+                    <button class="grayButton" onclick="changeColor(`gray`)">Gray</button>
+                    <button class="eraserButton" onclick="changeColor(`white`)">Eraser</button>
+                    <button class="randomButton" onclick="changeColor(`random`)">Rainbow</button>
+                    <button onclick="resetBoard()">Reset</button>
+                </div>
+                <div>
+                    <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
+                    <button>Set Size</button>
+                </div>
+                <div class="alert">
+                    <p>Input must be between 2 and 100</p>
+                </div>
             </div>
         </div>
-    </div>
- 
 </body>
 <script src="script.js"></script>
 </html>
