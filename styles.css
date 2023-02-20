@@ -1,123 +1,120 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    
-
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .flex-container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(rgba(28, 190, 190, 0.082), rgb(111, 202, 142));
-    
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgba(28, 190, 190, 0.082), rgb(111, 202, 142));
 }
 
 .board {
-    width: 80%;
-    height: 80%;
-    display: grid;
-    border: 1px solid black;
-    background-color: white;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  border: 1px solid black;
+  background-color: white;
 }
 
 .square {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .board:hover,
-button:hover{
-    cursor: pointer;
+button:hover {
+  cursor: pointer;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    min-height: 300px;
-    width: 60vw;
-    height: 60vw;
-    max-width: 600px;
-    max-height: 600px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 300px;
+  width: 60vw;
+  height: 60vw;
+  max-width: 600px;
+  max-height: 600px;
+  align-items: center;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .buttons {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 button {
-    padding: 0.3em 1.2em;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 2em;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    transition: all 0.2s;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s;
 }
 
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .blackButton {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .blackButton:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .grayButton {
-    background-color: gray;
-    color: white;
+  background-color: gray;
+  color: white;
 }
 
 .grayButton:hover {
-    background-color: rgb(128, 128, 128, 0.411);
-    color: white;
+  background-color: rgb(128, 128, 128, 0.411);
+  color: white;
 }
 
 .randomButton {
-    background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
+  background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
 }
 
 .randomButton:hover {
-    background: linear-gradient(0.25turn, #33dd23, #ebf8e1, #d6c31a);
+  background: linear-gradient(0.25turn, #33dd23, #ebf8e1, #d6c31a);
 }
 
 .erasorButton {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .grayButton:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 input {
-    width: 50px;
+  width: 50px;
 }
 
 .alert {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font: 1em sans-serif;
-    font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 5pxas;
+  font: 1em sans-serif;
+  font-weight: 700;
 }
 
 .mode {
-    padding: 15px;
+  padding: 15px;
 }
