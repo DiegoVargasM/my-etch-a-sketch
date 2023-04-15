@@ -94,7 +94,7 @@ button {
   background: linear-gradient(0.25turn, #33dd23, #ebf8e1, #d6c31a);
 }
 
-.erasorButton {
+.eraserButton {
   background-color: white;
   color: black;
 }
@@ -117,4 +117,8 @@ input {
 
 .mode {
   padding: 15px;
+}
+
+.error {
+  display: none;
 }

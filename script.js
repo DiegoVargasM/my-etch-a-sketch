@@ -1,7 +1,7 @@
 //initial color value
 let color = "black";
 //initial click value
-let click = false;
+let click = true;
 
 function populateBoard(size) {
   let board = document.querySelector(".board");
@@ -10,15 +10,14 @@ function populateBoard(size) {
   squares.forEach((div) => div.remove());
   board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
   board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
+
   //create grid
   let amount = size * size;
   for (let i = 0; i < amount; i++) {
     let square = document.createElement("div");
-    board.appendChild(square);
-    //color grid items
     square.addEventListener("mouseover", colorSquare);
-    //add class to grid items
-    square.className = "square";
+    square.style.backgroundColor = "white"
+    board.insertAdjacentElement("beforeend",square);
   }
 }
 
@@ -55,8 +54,7 @@ function changeColor(choice) {
 function resetBoard() {
   let board = document.querySelector(".board");
   let squares = board.querySelectorAll("div");
-  squares.forEach((div) => div.remove());
-  populateBoard(16);
+  squares.forEach((div) => (div.style.backgroundColor = "white"))
 }
 
 //function to toggle drawing on/off with clicking
